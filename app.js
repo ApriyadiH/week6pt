@@ -6,12 +6,12 @@ const connect = require("./schemas");
 connect();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 app.use(express.json());
 
 app.use("/api", [postsRouter, commentsRouter]);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log(port, 'Server is open with port!');
 });
