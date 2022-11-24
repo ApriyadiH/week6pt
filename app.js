@@ -13,5 +13,6 @@ app.use(express.json());
 app.use("/api", [postsRouter, commentsRouter]);
 
 app.listen(process.env.PORT || 3001, () => {
+// app.listen(port, () => {
   console.log(port, 'Server is open with port!');
 });

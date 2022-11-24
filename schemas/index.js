@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 
 const connect = () => {
   mongoose
-    .connect('mongodb+srv://ayam:<ayam>@cluster0.chzg4j4.mongodb.net/week6pt?retryWrites=true&w=majority')
+    .connect('mongodb+srv://ayam:ayam@cluster0.chzg4j4.mongodb.net/week6pt?retryWrites=true&w=majority')
+    // .connect('mongodb://localhost:27017/week6pt')
     .catch(err => console.log(err));
 };
 
